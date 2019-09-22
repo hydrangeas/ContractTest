@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,7 @@ namespace ContractTest
         /// <returns></returns>
         private double div(double divisor, double dividend)
         {
+            Contract.Requires(dividend != 0);
             return divisor / dividend;
         }
     }

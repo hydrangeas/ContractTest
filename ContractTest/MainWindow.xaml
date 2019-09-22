@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContractTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight">
+    <Grid Margin="10">
+        <TextBox HorizontalAlignment="Left"
+                 Height="23"
+                 TextWrapping="Wrap" 
+                 Text="1"
+                 VerticalAlignment="Top"
+                 Width="120"/>
+        <Label Content="÷"
+               HorizontalAlignment="Left"
+               Margin="125,0,0,0" 
+               VerticalAlignment="Top"
+               Height="23"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Height="23"
+                 Margin="147,0,0,0"
+                 TextWrapping="Wrap" 
+                 Text="1"
+                 VerticalAlignment="Top"
+                 Width="120"/>
+        <Button Content="＝"
+                HorizontalAlignment="Left"
+                Margin="272,0,0,0"
+                VerticalAlignment="Top" 
+                Width="20" 
+                Height="23"/>
         
+        <Label Content="" 
+               HorizontalAlignment="Left"
+               Margin="297,0,0,0"
+               VerticalAlignment="Top" 
+               Height="23"
+               MinWidth="50"/>
+
     </Grid>
 </Window>

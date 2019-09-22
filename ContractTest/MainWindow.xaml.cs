@@ -24,5 +24,29 @@ namespace ContractTest
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 「＝」ボタンクリック時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Double.TryParse(this.divisor.Text, out var divisor);
+            Double.TryParse(this.dividend.Text, out var dividend);
+            var divided = div(divisor, dividend);
+            this.divided.Content = divided;
+        }
+
+        /// <summary>
+        /// 割り算
+        /// </summary>
+        /// <param name="divisor">割られる数</param>
+        /// <param name="dividend">割る数</param>
+        /// <returns></returns>
+        private double div(double divisor, double dividend)
+        {
+            return divisor / dividend;
+        }
     }
 }
